@@ -1,0 +1,20 @@
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    font-size: 3rem;
+    color: $header-color;
+    margin: 0;
+    padding: 2rem;
+    @include small-and-above {
+      position: relative;
+      z-index: 99;
+      width: 100%;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }

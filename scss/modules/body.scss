@@ -1,0 +1,21 @@
+.container-secondary {
+  text-align: center;
+  color: $body-color;
+  @include small-and-above {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+.container-secondary > h2 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container-secondary > p {
+  font-size: 1rem;
+}
