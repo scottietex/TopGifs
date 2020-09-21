@@ -13,9 +13,40 @@
   }
 }
 .container-secondary > h2 {
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 2em;
+  padding: 2em;
 }
 .container-secondary > p {
-  font-size: 1rem;
+  font-size: 1em;
+  margin: 5%;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.search-bar > input {
+  border: 2px solid $border-color;
+  height: 30px;
+  width: 45%;
+  outline: 0;
+  background-color: $header-color;
+  padding: 1em 1em 1.2em 1em;
+  margin: 2rem 2rem 2rem 2rem;
+  border-radius: 4px;
+  font-size: 1.45em;
+}
+
+.search-bar > input:hover, .search > input:focus {
+  border: 3px solid $hover-color;
+  background-color: $header-color;
+  box-shadow: 5px 5px $border-color;
+}
+
+footer a {
+color: $hover-color;
+text-decoration: none;
+margin: 5%;
 }

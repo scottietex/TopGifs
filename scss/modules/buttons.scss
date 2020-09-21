@@ -4,15 +4,17 @@
     white-space: nowrap;
     vertical-align: middle;
     background-image: none;
-    border: 1px solid black;
+    border: 3px solid $border-color;
     cursor: pointer;
-    padding: 12px 30px;
-    font-size: 1.313em;
+    padding: 6px 15px 6px 15px;
+    font-size: 1.5em;
     font-weight: bold;
-    border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
-.btn :hover {
-    color: yellow;
+.btn:hover {
+    background-color: $hover-color;
+    color: $body-color;
+    box-shadow: 5px 5px $border-color;
+
 }

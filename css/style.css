@@ -347,17 +347,18 @@ h1, h2 {
   white-space: nowrap;
   vertical-align: middle;
   background-image: none;
-  border: 1px solid black;
+  border: 3px solid grey;
   cursor: pointer;
-  padding: 12px 30px;
-  font-size: 1.313em;
+  padding: 6px 15px 6px 15px;
+  font-size: 1.5em;
   font-weight: bold;
-  border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease 0s; }
 
-.btn :hover {
-  color: yellow; }
+.btn:hover {
+  background-color: #009688;
+  color: black;
+  box-shadow: 5px 5px grey; }
 
 .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
@@ -392,10 +393,41 @@ h1, h2 {
         clear: both; } }
 
 .container-secondary > h2 {
-  font-size: 2rem;
-  padding: 2rem; }
+  font-size: 2em;
+  padding: 2em; }
 
 .container-secondary > p {
-  font-size: 1rem; }
+  font-size: 1em;
+  margin: 5%; }
+
+.search-container {
+  position: relative;
+  display: flex;
+  width: 100%; }
+
+.search-bar > input {
+  border: 2px solid grey;
+  height: 30px;
+  width: 45%;
+  outline: 0;
+  background-color: white;
+  padding: 1em 1em 1.2em 1em;
+  margin: 2rem 2rem 2rem 2rem;
+  border-radius: 4px;
+  font-size: 1.45em; }
+
+.search-bar > input:hover, .search > input:focus {
+  border: 3px solid #009688;
+  background-color: white;
+  box-shadow: 5px 5px grey; }
+
+footer a {
+  color: #009688;
+  text-decoration: none;
+  margin: 5%; }
+
+/* Theme Imports */
+body {
+  font-family: CHICKENPie, Arial, Helvetica, sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
