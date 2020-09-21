@@ -1,7 +1,7 @@
 # Project-2
 Second bootcamp project - MealMatcher
 
-MealMatcher is a simple website with a search engine that allows users to search for recipes based on the keywords they enter e.g. ingredient, diet type, recipe name.
+MealMatcher is a simple website with a search engine that allows users to search for recipes based on the keywords they enter e.g. ingredients, diet type, recipe name.
 
 Tools used - html, css, Sass, Bootstrap and jQuery
 
