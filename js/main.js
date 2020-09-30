@@ -1,30 +1,41 @@
-function getsource(id){
-    $.ajax ({
-        url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=4d58b05dbbb74086800a0dc69857cf1b",
-        success: function(res) {
-            document.getElementById('sourceLink').innerHTML=res.sourceUrl
-            document.getElementById('sourceLink').href=res.sourceUrl
-        }
-    })
-}
-function getrecipe(q){
-    $.ajax ({
-        url:"https://api.spoonacular.com/recipes/search?apiKey=4d58b05dbbb74086800a0dc69857cf1b&number=1&"+q,
-        success: function (res) {
-            document.getElementById("output").innerHTML="<h3>"+res.results[0].title+"</h3><br><img src='"+res.baseUri+res.results[0].image+"width='400'/> <br> ready in "+res.results[0].readyInMinutes+" minutes"
-            getsource(res.results[0].id)
-        }
-    })
-}
+// searchbar handler
+$(function () {
+	var searchField = $('#query');
+	var icon = $('#search-btn');
 
-//$.getJSON('https://api.spoonacular.com/recipes/findByIngredients?apiKey=4d58b05dbbb74086800a0dc69857cf1b',function(data){
-   // console.log(data);
-  
-    //$.each(data, function(index, value){
-    //  console.log(value);
-   // })
-  //});
+	// focus event handler
+	$(searchField).on('focus', function() {
+		$(this).animate ({
+			width: '100%'
+		}, 400);
+		$(icon).animate( {
+			right: '10px'
+		}, 400);
+	});
 
+    $('#search-form').click(function(e) {
+		e.preventDefault();
+	});
+	$('#query').empty();
+	});
 
-//4d58b05dbbb74086800a0dc69857cf1b
-//GET https://api.spoonacular.com/recipes/findByIngredients
+//Javascript, jQuery
+	function getData() {
+
+	var input = $('#query').val()
+	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=V89j0MHE98pw2xhPi1oe5pK5zO94n8Q2&limit=10");
+
+	if(input === "") {
+		alert("Oops, you need to type something!")
+	}
+	else {
+		xhr.done(function(data) { 
+			console.log("success got data", data); 
+
+			var gifs = data.data
+			for (i in gifs) {
+				$('#success').append('<img src=' + gifs[i].images.original.url + ' style="height:350px; width:350px;">')
+			};
+		});
+	}
+};
