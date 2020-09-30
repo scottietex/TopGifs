@@ -1,20 +1,18 @@
-.btn {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-image: none;
-    border: 3px solid $border-color;
+#search-btn {
+    position: absolute;
+    right: 57%;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
     cursor: pointer;
-    padding: 6px 15px 6px 15px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
-.btn:hover {
-    background-color: $hover-color;
-    color: $body-color;
-    box-shadow: 5px 5px $border-color;
-
-}
+    zoom: 1;
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+    background: transparent url(../images/search-solid.svg) top left no-repeat;
+  }
+  
+  #search-btn:hover {
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+  }

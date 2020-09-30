@@ -1,4 +1,8 @@
-.container-secondary {
+body {
+  background-color: $body-color;
+}
+
+#search-form {
   text-align: center;
   color: $body-color;
   @include small-and-above {
@@ -12,41 +16,37 @@
     }
   }
 }
-.container-secondary > h2 {
-  font-size: 2em;
-  padding: 2em;
-}
-.container-secondary > p {
-  font-size: 1em;
-  margin: 5%;
-}
-
-.search-container {
-  position: relative;
+#search-form {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.search-bar > input {
-  border: 2px solid $border-color;
-  height: 30px;
+.field-container {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0, auto;
+}
+
+.search-field {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
   width: 45%;
-  outline: 0;
-  background-color: $header-color;
-  padding: 1em 1em 1.2em 1em;
-  margin: 2rem 2rem 2rem 2rem;
-  border-radius: 4px;
-  font-size: 1.45em;
-}
-
-.search-bar > input:hover, .search > input:focus {
-  border: 3px solid $hover-color;
-  background-color: $header-color;
-  box-shadow: 5px 5px $border-color;
-}
-
-footer a {
-color: $hover-color;
-text-decoration: none;
-margin: 5%;
+  padding: 11px 7px;
+  padding-right: 43px;
+  background: #fff;
+  color: black;
+  border: 1px solid #c8c8c8;
+  font-size: 1.6em;
+  border-bottom-color: #d2e2e7;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 6px #f0f0f0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 6px #f0f0f0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 6px #f0f0f0;
 }
