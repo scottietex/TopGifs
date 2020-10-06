@@ -1,10 +1,10 @@
 # Project-2
-Second bootcamp project - MealMatcher
+Second bootcamp project - TopGifs
 
-MealMatcher is a simple website with a search engine that allows users to search for recipes based on the keywords they enter e.g. ingredients, diet type, recipe name.
+TopGifs is a simple website with a search engine that allows users to search for gifs based on the keywords they enter.
 
 Tools used - html, css, Sass, Bootstrap and jQuery
 
-USER STORY 1: As a foodie, I want to find recipes easily so I can create delicious meals from the items in my fridge.
+USER STORY 1: As a content creator, I want to find gifs to add humour to my website.
 
-USER STORY 2: As a person looking to lose weight, I want to find healthy recipes to help me achieve my goals.
+USER STORY 2: As a blogger, I want to find gifs that align with the topics I am blogging about.
