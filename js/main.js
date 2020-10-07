@@ -30,7 +30,6 @@ $(function () {
 	}
 	else {
 		xhr.done(function(data) { 
-			console.log("success got data", data); 
 
 			var gifs = data.data
 			for (i in gifs) {
