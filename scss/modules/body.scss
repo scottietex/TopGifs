@@ -52,12 +52,14 @@ body {
 }
 
 #success {
-  display: inline-flexbox;
-  margin: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  margin: 2em;
 }
 
 #success img {
-  justify-content: center;
   height: 300px;
   width: 300px;
   margin: 2em;
