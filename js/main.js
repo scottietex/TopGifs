@@ -23,7 +23,7 @@ $(function () {
 	function getData() {
 
 	var input = $('#query').val()
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=V89j0MHE98pw2xhPi1oe5pK5zO94n8Q2&limit=15");
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=V89j0MHE98pw2xhPi1oe5pK5zO94n8Q2&limit=15");
 
 	if(input === "") {
 		alert("Oops, you need to type something!")
