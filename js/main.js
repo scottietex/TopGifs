@@ -13,11 +13,11 @@ $(function () {
 		}, 400);
 	});
 
-    $('#search-form').click(function(e) {
+	$('#search-btn').click(function(e) {
 		e.preventDefault();
+		$('#success').empty();
 	});
-	$('#query').empty();
-	});
+});
 
 //Javascript, jQuery
 	function getData() {
